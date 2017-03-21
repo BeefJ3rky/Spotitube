@@ -1,8 +1,7 @@
-package nl.tomvangrinsven.dea.webappFrontend;
+package nl.tomvangrinsven.dea.presentation;
 
 import nl.tomvangrinsven.dea.webappBackend.*;
-import nl.tomvangrinsven.dea.webappBackend.Repository.CountryMySQLContext;
-import nl.tomvangrinsven.dea.webappFrontend.Logic.CountryRepository;
+import nl.tomvangrinsven.dea.datasource.repository.TrackMySQLContext;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -21,12 +20,12 @@ public class GreetingService extends HttpServlet{
         response.setContentType("text/html;chartset=UTF-8");
         PrintWriter out = response.getWriter();
 
-        CountryRepository repo = new CountryRepository(new CountryMySQLContext());
+        TrackRepository repo = new TrackRepository(new TrackMySQLContext());
 
         try {
-            for (Country country :
+            for (Playlist playlist :
                     repo.getAllCountries()) {
-                out.println(country.getName());
+                out.println(playlist.getName());
             }
         }
         catch (SQLException e){

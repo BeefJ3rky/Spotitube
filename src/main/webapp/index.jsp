@@ -1,6 +1,6 @@
-<%@ page import="nl.tomvangrinsven.dea.webappFrontend.Logic.CountryRepository" %>
-<%@ page import="nl.tomvangrinsven.dea.webappBackend.Repository.CountryMySQLContext" %>
-<%@ page import="nl.tomvangrinsven.dea.webappBackend.Country" %>
+<%@ page import="nl.tomvangrinsven.dea.presentation.Logic.TrackRepository" %>
+<%@ page import="nl.tomvangrinsven.dea.datasource.repository.TrackMySQLContext" %>
+<%@ page import="nl.tomvangrinsven.dea.webappBackend.Playlist" %>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
    "http://www.w3.org/TR/html4/loose.dtd">

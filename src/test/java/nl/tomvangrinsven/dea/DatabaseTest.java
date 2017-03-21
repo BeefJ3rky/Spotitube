@@ -1,7 +1,5 @@
 package nl.tomvangrinsven.dea;
 
-import nl.tomvangrinsven.dea.webappBackend.Database.MySQLDatabase;
-import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 

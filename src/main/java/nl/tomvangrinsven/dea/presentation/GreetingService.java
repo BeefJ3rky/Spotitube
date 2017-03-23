@@ -1,7 +1,6 @@
 package nl.tomvangrinsven.dea.presentation;
 
-import nl.tomvangrinsven.dea.webappBackend.*;
-import nl.tomvangrinsven.dea.datasource.repository.TrackMySQLContext;
+
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -20,17 +19,7 @@ public class GreetingService extends HttpServlet{
         response.setContentType("text/html;chartset=UTF-8");
         PrintWriter out = response.getWriter();
 
-        TrackRepository repo = new TrackRepository(new TrackMySQLContext());
 
-        try {
-            for (Playlist playlist :
-                    repo.getAllCountries()) {
-                out.println(playlist.getName());
-            }
-        }
-        catch (SQLException e){
-            e.printStackTrace();
-        }
 
 
     }

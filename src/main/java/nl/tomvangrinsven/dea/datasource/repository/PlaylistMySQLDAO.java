@@ -6,7 +6,7 @@ import nl.tomvangrinsven.dea.domain.Playlist;
 import java.sql.SQLException;
 import java.util.ArrayList;
 
-public class PlaylistMySQLContext implements IPlaylistContext {
+public class PlaylistMySQLDAO implements IPlaylistContext {
     @Override
     public ArrayList<Playlist> getAllPlaylists() throws SQLException {
         return null;

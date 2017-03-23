@@ -2,11 +2,14 @@ package nl.tomvangrinsven.dea.datasource.interfaces;
 
 import nl.tomvangrinsven.dea.domain.Track;
 
+
 import java.sql.SQLException;
-import java.util.List;
+import java.util.ArrayList;
+
+
 
 public interface ITrackContext {
-    List<Track> getAllTracks() throws SQLException;
+    ArrayList<Track> getAllTracks() throws SQLException;
     Track getTrackByID() throws SQLException;
     boolean updateTrack(String name, Track track) throws SQLException;
     boolean deleteTrack(String name) throws SQLException;

@@ -3,6 +3,13 @@ package nl.tomvangrinsven.dea.domain;
 
 public class Track {
 
+    public Track(String performer, String title, String url, long duration) {
+        this.performer = performer;
+        this.title = title;
+        this.url = url;
+        this.duration = duration;
+    }
+
     private String performer;
     private String title;
     private String url;

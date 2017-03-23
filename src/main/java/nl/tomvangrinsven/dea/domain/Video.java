@@ -7,6 +7,13 @@ public class Video extends Track {
     private Calendar publicationDate;
     private String description;
 
+    public Video(String performer, String title, String url, long duration, int playCount, Calendar publicationDate, String description) {
+        super(performer, title, url, duration);
+        this.playCount = playCount;
+        this.publicationDate = publicationDate;
+        this.description = description;
+    }
+
     public int getPlayCount() {
         return playCount;
     }
